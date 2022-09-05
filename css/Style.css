@@ -1,0 +1,82 @@
+body{   
+    background-color: #393E46 !important;
+}
+
+.base-color{
+    color: #B55400;
+}
+.text-color{
+    color: #EEEEEE !important;
+}
+#add,#clear,#error{
+    width: 100%;
+    max-width: 600px;
+}
+#clear{
+    margin-bottom: 200px;
+    height: 50px;
+}
+.task{
+    margin-top: 15px;
+    max-width: 600px;
+    display:  flex;
+    background-color: #1B262C;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #B55400;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task:hover{ transform: scale(1.1); }
+
+.task input{
+    background: none;
+    outline: none;
+    border: none;
+    color: #EEEEEE;
+    font-weight: 500;
+    font-size: large;
+    width: fit-content;
+}
+
+.task .actions{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.7s;
+}
+.task .actions button:hover{
+    transform: scale(1.1);
+}
+.task .actions button.edit{
+    background-image: linear-gradient(to right,#B55400,#EEEEEE);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.task .actions button.remove{
+    color: crimson;
+}
+body{
+    position: relative;
+}
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
